@@ -112,7 +112,7 @@ header{
 		.icon-logo{
 			font-size: rem-calc(80);
 			margin-top: rem-calc(-35);
-			margin-left: rem-calc(10);
+			margin-left: rem-calc(0);
 			@media #{$small-only} { 
 				margin-left: 0;
 			}
