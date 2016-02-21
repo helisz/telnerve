@@ -1,6 +1,13 @@
 $(document).foundation();
 
 $(document ).ready(function() {
+	var ua = window.navigator.userAgent;
+	var msie = ua.indexOf("MSIE ");
+
+	if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))
+	{
+		$('video').remove();
+	}
 	$(window).scroll(function() {
 		if($(window).scrollTop() > 30) {
 			$('header').addClass('scrolled');
@@ -8,7 +15,16 @@ $(document ).ready(function() {
 			$('header').removeClass('scrolled');
 		}
 	});
-	
+
+	function vh100(){
+		var win_h = $(window).height();
+		$('.slider, .carousel').height(win_h);
+	}
+	vh100();
+	$( window ).resize(function() {
+		vh100();
+	});
+
 	$('video').addClass('load');
 
 	$('#carousel').slick({
@@ -61,7 +77,7 @@ $(document ).ready(function() {
 			$('.nav-link').removeClass("active");
 		}
 	});
-	
+
 	$('#to-admin-2').click(function(){
 		$('#admin-1').slideUp(400);
 		$('#admin-2').slideDown(400);
@@ -84,7 +100,7 @@ $(document ).ready(function() {
 		});
 		$('.off-canvas-wrap').removeClass('move-left');
 
-		
+
 	});
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
