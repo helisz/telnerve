@@ -1,0 +1,242 @@
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: rem-calc(100);
+	background: transparent;
+	color: white;
+	z-index: 100;
+	@include transition(all, 0.3s, ease-in-out);
+	.nav-links{
+		a.nav-link{
+			line-height: rem-calc(100);
+			height: rem-calc(100);
+			display: inline-block;
+			color: white;
+			font-size: rem-calc(12);
+			padding: 0 rem-calc(10);
+			@include transition(all, 0.3s, ease-in-out);
+			&:hover, &.active{
+				background: $primary-color;
+			}
+		}
+		.btn{
+			height: rem-calc(30);	
+			border: 2px solid $primary-color;
+			background: transparent;
+			color: $primary-color;
+			outline: none;
+			line-height: 0;
+			margin: 0;
+			&:hover{
+				background: $primary-color;
+				color: white;
+			}
+		}
+	}
+	#top-nav-menu{
+		width: 100%;
+		border-top: 2px solid $primary-color;
+	}
+	.icon-logo{
+		@include transition(all, 0.3s, ease-in-out);
+		float: left;
+		display: inline-block;
+		font-size: rem-calc(120);
+		margin-top: rem-calc(-40);
+		margin-left: rem-calc(20);
+		@media #{$small-only} { 
+			font-size: rem-calc(80);
+			margin-top: rem-calc(-35);
+			margin-left: 0;
+		}
+	}
+	.icon-menu{
+		color: white;
+		line-height: rem-calc(50);
+		&:hover{
+			color: $primary-color;
+		}
+	}
+	.nav-container{
+		height: auto;
+		position: absolute;
+		top: rem-calc(100);
+		left: 0;
+		right: 0;
+		background: rgba(35, 40, 55,0.95);
+		@include transition(all, 0.3s, ease-in-out);
+		.row{
+			padding: rem-calc(40) 0;
+		}
+		p{
+			font-size: rem-calc(12);
+			color: rgba(255,255,255,0.3);
+			margin: 0;
+		}
+		.title{
+			text-transform: uppercase;
+			font-size: rem-calc(16);
+			font-weight: 700;
+			color: $primary-color;
+		}
+		ul{
+			list-style: none;
+			margin: 0;
+			li{
+				a{
+					color: rgba(255,255,255,0.3);
+					font-size: rem-calc(14);
+					&:hover{
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+	&.scrolled{
+		height: rem-calc(50);
+		background: rgba(23, 27, 38, 0.95);
+		color: white;
+		box-shadow: 0 0 5px rgba(0,0,0,0.4);
+		.nav-container{
+			top: rem-calc(50);
+		}
+		.nav-links{
+			a.nav-link{
+				line-height: rem-calc(50);
+				height: rem-calc(50);
+			}
+		}
+		.icon-logo{
+			font-size: rem-calc(80);
+			margin-top: rem-calc(-35);
+			margin-left: rem-calc(10);
+			@media #{$small-only} { 
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.carousel{
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background-image: url(../assets/image/carousel-bg.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+	video {
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		@include transition(all, 2s, ease-in);
+		&.load{
+			opacity: 1;
+		}
+		@media #{$small-only} { 
+			display: none;
+		}
+	}
+	video.fillWidth {
+		width: 100%;
+	}	
+	#explore{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 5;
+		text-align: center;
+		color: white;
+		@include transition(all, 0.2s, ease-in);
+		&:hover{
+			color: $primary-color;
+		}
+		div{
+			font-size: rem-calc(12);
+			font-style: italic;
+			line-height: rem-calc(5);
+		}
+	}
+}
+#carousel{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: url('../assets/image/screen.png');
+	.slider{
+		height: 100vh;
+		background: rgba(35,40,55,0.6);
+		.container{
+			height: 100%;
+			.row{
+				height: 100%;
+				.column{
+					display: table;
+					height: 100%;
+					.slider-content{
+						display: table-cell;
+						vertical-align: middle;
+						color: white;
+						h2{
+							color: white;
+							text-transform: uppercase;
+							font-weight: 700;
+						}
+						p{
+							color: white;
+						}
+						.btn-carousel{
+							line-height: rem-calc(50);
+							border-radius: rem-calc(100);
+							height: rem-calc(54);
+							font-size: rem-calc(14);
+							padding: 0 rem-calc(40);
+							outline: none;
+							margin-top: rem-calc(20);
+							@media #{$small-only} { 
+								line-height: rem-calc(30);
+								height: rem-calc(34);
+								margin-top: rem-calc(10);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.right-off-canvas-menu{
+	.icon-logo{
+		color: white;
+		font-size: rem-calc(120);
+		text-align: center;
+		display: block;
+		height: rem-calc(100);
+		line-height: rem-calc(160);
+	}
+	ul{
+		margin: rem-calc(20);
+		list-style: none;
+		li{
+			text-align: center;
+			margin-bottom: rem-calc(20);
+			a{
+				color: white;
+				font-size: rem-calc(14);
+				&:hover{
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,591 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Foundation</title>
+	<link rel="stylesheet" href="css/app.css" />
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+	<link href="assets/fonts/fontcustom.css" rel="stylesheet" type='text/css'>
+</head>
+<body>
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+			<!-- Off Canvas Menu -->
+			<aside class="right-off-canvas-menu">
+				<div class="text-center">
+					<i id="icon-logo" class="icon-logo"></i>
+				</div>
+				<ul>
+					<li><a href="#">COMPANY</a></li>
+					<li><a href="#">PRODUCTS</a></li>
+					<li><a href="#">PRICING</a></li>
+					<li><a href="#">EVENTS</a></li>
+					<li><button class="btn btn-ghost" id="nav-login-side">LOGIN</button></li>
+				</ul>
+			</aside>
+			<header>
+				<div class="container">
+					<div class="row">
+						<div class="column small-12">
+							<i class="icon-logo"></i>
+							<div class="right">
+								<div class="nav-links hide-for-small-only">
+									<a class="nav-link" href="#">COMPANY</a>
+									<a class="nav-link" href="#">PRODUCTS</a>
+									<a class="nav-link" href="#">PRICING</a>
+									<a id="to-top-nav-menu" class="nav-link" href="#">EVENTS</a>
+									<button class="btn btn-primary" id="nav-login">LOGIN</button>
+								</div>
+								<a class="right-off-canvas-toggle show-for-small-only" href="#" >
+									<i id="icon-menu" class="icon-menu"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="nav-container">
+					<div id="top-nav-menu" class="hide">
+						<div class="row">
+							<div class="column small-12 medium-4">
+								<div class="title">Navigation Sample</div>
+								<p>Dante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Cura.</p>
+							</div>
+							<div class="column small-12 medium-4">
+								<ul>
+									<li><a href="#">Project Launch Event</a></li>
+									<li><a href="#">Test Event</a></li>
+									<li><a href="#">Project Finish Event</a></li>
+								</ul>
+							</div>
+							<div class="column small-12 medium-4">
+								<ul>
+									<li><a href="#">Project Launch Event</a></li>
+									<li><a href="#">Test Event</a></li>
+									<li><a href="#">Project Finish Event</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="carousel">
+				<video autoplay loop class="fillWidth">
+					<source src="assets/video/video.mp4" type="video/mp4"/>
+					Your browser does not support the video tag. I suggest you upgrade your browser.
+				</video>
+
+				<div id="carousel">
+
+					<div class="slider">
+						<div class="container">
+							<div class="row">
+								<div class="column small-12 medium-10 medium-push-1 large-8 large-push-2 ">
+									<div class="slider-content text-center">
+										<h2>Whole suite<br>for your business</h2>
+										<p>Be one step ahead of your competitors.</p>
+										<a href="#" class="btn btn-ghost btn-carousel">GET STARTED</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider">
+						<div class="container">
+							<div class="row">
+								<div class="column small-12 medium-10 medium-push-1 large-8 large-push-2 ">
+									<div class="slider-content text-center">
+										<h2>Next Generation Solution</h2>
+										<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+										<a href="#" class="btn btn-ghost btn-carousel">GET STARTED</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" id="explore">
+					<div>Explore Telnerve</div>
+					<i id="icon-down" class="icon-down"></i>
+				</a>
+			</div>
+
+			<div class="admin">
+				<div class="container">
+					<!-- step 1 -->
+					<div id="admin-1" class="row login block">
+						<div class="column small-12 medium-6">
+							<div class="title">Welcome</div>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+						</div>
+						<div class="column small-12 medium-6 functions">
+							<a id="to-admin-2" class="btn btn-dark btn-ghost" href="#">LOGIN</a>
+							<a class="btn btn-dark btn-primary" href="#">REGISTER</a>
+						</div>
+					</div>
+					<!-- step 2 -->
+					<div id="admin-2" class="hide row login block">
+						<div class="column small-12 medium-4">
+							<div class="title">Login</div>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+						</div>
+						<div class="column small-12 medium-8 functions">
+							<input class="dark" type="email" placeholder="E-mail" />
+							<input class="dark" type="password" placeholder="Password" />
+							<p>
+								<a id="to-admin-4" class="btn btn-dark btn-ghost" href="#">LOGIN</a>
+								<a class="btn btn-dark btn-primary" href="#">CANCEL</a>
+							</p>
+						</div>
+					</div>
+
+					<!-- step 3 -->
+					<div id="admin-3" class="hide row processing block">
+						<div class="column small-12 text-center">
+							<img class="ajax-loader" src="assets/image/ajax-loader.gif" alt="">
+							<p>Processing...</p>
+						</div>
+					</div>
+
+					<!-- step 4 -->
+					<div id="admin-4" class="hide row logined block">
+						<div class="column small-12 medium-3 large-5 left">
+							<div class="title">Greetings, Chris</div>
+							<p>Please choose a service.</p>
+						</div>
+						<div class="column small-12 medium-9 large-7 functions">
+							<!-- 4 links -->
+							<a class="btn btn-func" href="#" data-reveal-id="modal_1">
+								<i id="icon-func-4" class="icon-func-1 func-icon"></i>
+								Batch Sending SMS
+							</a>
+							<a class="btn btn-func" href="#" data-reveal-id="modal_2">
+								<i id="icon-func-4" class="icon-func-2 func-icon"></i>
+								Account Management
+							</a>
+							<a class="btn btn-func" href="#" data-reveal-id="modal_3">
+								<i id="icon-func-4" class="icon-func-3 func-icon"></i>
+								Traffic Summary Report
+							</a>
+							<a class="btn btn-func" href="#" data-reveal-id="modal_4">
+								<i id="icon-func-4" class="icon-func-4 func-icon"></i>
+								Message Delivery Status
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="square">
+				<div class="row">
+					<div class="column small-12 square-wrapper">
+						<div class='square-box link long' data-company="China Mobile">
+							<div class='square-content' style="background-image: url(assets/image/square-0-s.png);"><div><img src="assets/image/square-0.png" alt=""></div></div>
+						</div>
+						<div class='square-box link' data-company="Citic Group">
+							<div class='square-content' style="background-image: url(assets/image/square-1-s.png);"><div><img src="assets/image/square-1.png" alt=""></div></div>
+						</div>
+						<div class='square-box link' data-company="Facebook">
+							<div class='square-content' style="background-image: url(assets/image/square-2-s.png);"><div><img src="assets/image/square-2.png" alt=""></div></div>
+						</div>
+
+						<div class='square-box link' data-company="AT&T">
+							<div class='square-content' style="background-image: url(assets/image/square-3-s.png);"><div><img src="assets/image/square-3.png" alt=""></div></div>
+						</div>
+						<div class='square-box link' data-company="Google">
+							<div class='square-content' style="background-image: url(assets/image/square-4-s.png);"><div><img src="assets/image/square-4.png" alt=""></div></div>
+						</div>
+						<div class='square-box link long' data-company="Zendesk">
+							<div class='square-content' style="background-image: url(assets/image/square-5-s.png);"><div><img src="assets/image/square-5.png" alt=""></div></div>
+						</div>
+						<div class='square-box link' data-company="China Unicom">
+							<div class='square-content' style="background-image: url(assets/image/square-6-s.png);"><div><img src="assets/image/square-6.png" alt=""></div></div>
+						</div>
+						<div class='square-box link' data-company="Netflix">
+							<div class='square-content' style="background-image: url(assets/image/square-7-s.png);"><div><img src="assets/image/square-7.png" alt=""></div></div>
+						</div>
+
+						<div id="company-info" class="info hide">
+							<div class="square-box">
+								<div class="square-content"><div><img id="company-logo" class="show" src="" alt="Company Logo"></div></div>
+							</div>
+							<div class="content">
+								<div class="inner-content">
+									<h2>News from <span id="company-news"></span>:</h2>
+									<div id="ajax-html">
+									</div>
+								</div>
+							</div>
+							<div class="close">&times;</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- footer -->
+			<footer>
+				<div class="row">
+					<!-- section -->
+					<div class="column small-6 medium-3">
+						<div class="title">Company</div>
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Our Values</a></li>
+							<li><a href="#">Our Principles</a></li>
+							<li><a href="#">Our Team</a></li>
+							<li><a href="#">Press &nbsp; Media</a></li>
+							<li><a href="#">Careers</a></li>
+						</ul>
+					</div>
+
+					<!-- section -->
+					<div class="column small-6 medium-3">
+						<div class="title">Products</div>
+						<ul>
+							<li><a href="#">TaskRouter</a></li>
+							<li><a href="#">Network Service</a></li>
+							<li><a href="#">IP Messaging</a></li>
+							<li><a href="#">Authy</a></li>
+							<li><a href="#">Monitor</a></li>
+							<li><a href="#">Support Plans</a></li>
+						</ul>
+					</div>
+
+					<!-- section -->
+					<div class="column small-6 medium-3">
+						<div class="title">Pricing</div>
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Voice Pricing</a></li>
+							<li><a href="#">Messaging Pricing</a></li>
+							<li><a href="#">SIP Trunking Pricing</a></li>
+							<li><a href="#">Client Pricing</a></li>
+							<li><a href="#">Network Pricing</a></li>
+							<li><a href="#">TaskRouter</a></li>
+						</ul>
+					</div>
+
+					<!-- section -->
+					<div class="column small-6 medium-3">
+						<div class="title">Events</div>
+						<ul>
+							<li><a href="#">Project Launch Event</a></li>
+							<li><a href="#">Test Event</a></li>
+							<li><a href="#">Project Finish Event</a></li>
+						</ul>
+					</div>
+
+
+				</div>
+				<div class="dark">
+					<div class="row">
+						<div class="column small-12 medium-6">
+							<i class="icon-logo"></i>
+						</div>
+						<div class="column small-12 medium-6 text-right">Copyright ©. All Rights Reserved</div>
+					</div>
+				</div>
+			</footer>
+
+			<!-- modals1 -->
+			<div id="modal_1" class="reveal-modal func-modal" data-reveal aria-labelledby="bashSMS" aria-hidden="true" role="dialog">
+				<div class="header">
+					<h2 id="bashSMS" class="modal-title">
+						<i id="icon-func-4" class="icon-func-1"></i>&nbsp;Batch Sending SMS
+					</h2>
+				</div>
+				<!-- form -->
+				<form data-abide class="row">
+					<div class="row">
+						<div class="small-12 medium-8 columns">
+							<label>Batch Reference <small>*</small>
+								<input type="text" required pattern="[a-zA-Z]+">
+							</label>
+							<small class="error">A valid reference is required.</small>
+						</div>
+						<div class="small-12 medium-4 columns tips">
+							Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 medium-8 columns">
+							<label>Product Class
+								<select>
+									<option value="husker">Class A: Lorem Ipsum</option>
+									<option value="starbuck">Class B: Dolor Site Amet</option>
+									<option value="hotdog">Class C: Elementum Id Enium</option>
+									<option value="apollo">Class D: Sed Prottior</option>
+								</select>
+							</label>
+						</div>
+						<div class="small-12 medium-4 columns tips">
+							Nulla porttitor accumsan tincidunt.
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 medium-8 columns">
+							<label>Target Send Time</label>
+							<div class="row">
+								<div class="small-6 columns">
+									<input type="radio" name="targetTime" value="now" id="timeNow"><label for="timeNow">Now</label>
+								</div>
+								<div class="small-6 columns">
+									<input type="radio" name="targetTime" value="spec" id="timeSpec"><label for="timeSpec">Specified Time</label>
+								</div>
+							</div>
+						</div>
+						<div class="small-12 medium-4 columns tips">
+							Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 medium-8 columns">
+							<label>Delivery Address <small>*</small>
+								<input type="text" required pattern="[a-zA-Z]+">
+								<small class="error">Address should not be empty.</small>
+							</label>
+						</div>
+						<div class="small-12 medium-4 columns tips">
+							Curabitur aliquet quam id dui posuere blandit.
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 medium-8 columns">
+							<label>Content
+								<textarea rows="5"></textarea>
+							</label>
+						</div>
+						<div class="small-12 medium-4 columns tips">
+							Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12 medium-8 columns">
+							<label>Remark
+								<textarea rows="5"></textarea>
+							</label>
+						</div>
+						<div class="small-12 medium-4 columns tips">
+							Eegestas non nisi. Praesent sapien massa, convallis a peta de.
+						</div>
+					</div>
+					<!-- submit -->
+					<button type="submit" class="btn btn-primary">SUBMIT</button>
+					<a class="close-reveal-modal" aria-label="Close">&times;</a>
+				</form>
+			</div>
+
+
+			<!-- modals 2 -->
+			<div id="modal_2" class="reveal-modal func-modal" data-reveal aria-labelledby="accountMnm" aria-hidden="true" role="dialog">
+				<div class="header">
+					<h2 id="accountMnm" class="modal-title">
+						<i id="icon-func-4" class="icon-func-2"></i>&nbsp;Account Management
+					</h2>
+				</div>
+				<div class="row">
+					<div class="plan column small-12 medium-6">
+						<h5>Personal Detail</h5>
+						<div class="row">
+							<div class="column small-6 attr">Name</div>
+							<div class="column small-6 value text-right">Chris He Li</div>
+							<div class="column small-6 attr">Register Date</div>
+							<div class="column small-6 value text-right">2016-01-01</div>
+							<div class="column small-6 attr">Address</div>
+							<div class="column small-6 value text-right">(Protectd)</div>
+							<div class="column small-6 attr">Email</div>
+							<div class="column small-6 value text-right">helisz101@gmail.com</div>
+							<div class="column small-6 attr">Name</div>
+							<div class="column small-6 value text-right">Chris He Li</div>
+						</div>
+						<br>
+						<button class="btn btn-primary">EDIT</button>
+					</div>
+					<div class="plan column small-12 medium-6">
+						<h5>Service Plan Details</h5>
+						<div class="row">
+							<div class="column small-6 attr">Service Plan</div>
+							<div class="column small-6 value text-right">SP4GR2080PRO</div>
+							<div class="column small-6 attr">Contract End Date</div>
+							<div class="column small-6 value text-right">2016-12-31</div>
+							<div class="column small-6 attr">Remaining Handset Rebate Amount</div>
+							<div class="column small-6 value text-right">No record found as of this moment or please check it later</div>
+						</div>
+						<br>
+						<button class="btn btn-primary">EDIT</button>
+					</div>
+				</div>
+				<a class="close-reveal-modal" aria-label="Close">&times;</a>
+			</div>
+
+			<!-- modals 3 -->
+			<div id="modal_3" class="reveal-modal func-modal" data-reveal aria-labelledby="tsReport" aria-hidden="true" role="dialog">
+				<div class="header">
+					<h2 id="tsReport" class="modal-title">
+						<i id="icon-func-4" class="icon-func-3"></i>&nbsp;Traffic Summary Report
+					</h2>
+				</div>
+				<h5>Total Traffic</h5>
+				<div class="row">
+					<div class="row traffic">
+						<div class="column small-12 medium-3 large">TOTAL</div>
+						<div class="column small-12 medium-9">
+							<div class="small-12">
+								<div class="bar">
+									<div class="var" style="width: 40%"></div>
+									<div class="var red" style="width: 20%"></div>
+									<div class="var green" style="width: 11%"></div>
+									<div class="var purple" style="width: 5%"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column small-9 small">3.15 GB&nbsp;&nbsp;(2016-2-22 12:12pm)</div>
+								<div class="column small-3 small text-right">76%</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<hr>
+				<h5>Traffics</h5>
+				<div class="row">
+					<div class="row traffic">
+						<div class="column small-12 medium-3 large">INDIA</div>
+						<div class="column small-12 medium-9">
+							<div class="small-12">
+								<div class="bar empty">
+									<div class="var" style="width: 40%"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column small-12 small">1.13 GB (2016-2-22 12:12pm)</div>
+							</div>
+						</div>
+					</div>
+					<div class="row traffic">
+						<div class="column small-12 medium-3 large">JAPAN</div>
+						<div class="column small-12 medium-9">
+							<div class="small-12">
+								<div class="bar empty">
+									<div class="var red" style="width: 20%"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column small-12 small">0.55 GB (2016-2-22 12:12pm)</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="row traffic">
+						<div class="column small-12 medium-3 large">CHINA</div>
+						<div class="column small-12 medium-9">
+							<div class="small-12">
+								<div class="bar empty">
+									<div class="var green" style="width: 11%"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column small-12 small">223.14 MB (2016-2-22 12:12pm)</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="row traffic">
+						<div class="column small-12 medium-3 large">KOREA</div>
+						<div class="column small-12 medium-9">
+							<div class="small-12">
+								<div class="bar empty">
+									<div class="var purple" style="width: 5%"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column small-12 small">124.12 MB (2016-2-22 12:12pm)</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<hr>
+				<h5>Summary</h5>
+				<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+				<a class="close-reveal-modal" aria-label="Close">&times;</a>
+			</div>
+
+			<!-- modals 4 -->
+			<div id="modal_4" class="reveal-modal func-modal" data-reveal aria-labelledby="msdStatus" aria-hidden="true" role="dialog">
+				<div class="header">
+					<h2 id="msdStatus" class="modal-title">
+						<i id="icon-func-4" class="icon-func-4"></i>&nbsp;Message Delivery Status
+					</h2>
+				</div>
+				<div class="text-right">From 
+					<select class="inline">
+						<option value="201601">2016-01</option>
+						<option value="201602">2016-02</option>
+					</select>
+					to 
+					<select class="inline">
+						<option value="201602">2016-02</option>
+						<option value="201603">2016-03</option>
+					</select>
+				</div>
+				<div class="table-wrapper">
+					<table cellpadding="0" cellspacing="0">
+						<thead>
+							<tr>
+								<th>Date</th>
+								<th>References</th>
+								<th>Content</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2016-01-03</td>
+								<td>Roy, Sepia, Monogo</td>
+								<td>Nulla porttitor accumsan tincidunt. Sed porttitor...</td>
+								<td><a href="#">arrived</a></td>
+							</tr>
+							<tr>
+								<td>2016-01-05</td>
+								<td>Joy</td>
+								<td>Adipiscing elit. Vestibulum ante ipsum primis in f...</td>
+								<td><a href="#">partial</a></td>
+							</tr>
+							<tr>
+								<td>2016-01-07</td>
+								<td>John, Shane, Stephane</td>
+								<td>igula. Quisque velit nisi, pretium ut lacinia ind...</td>
+								<td><a href="#">canceled</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<a class="close-reveal-modal" aria-label="Close">&times;</a>
+			</div>
+
+
+
+			<!-- close the off-canvas menu -->
+			<a class="exit-off-canvas"></a>
+
+		</div>
+	</div>
+
+	<!-- scripts -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/foundation/js/foundation/foundation.js"></script>
+	<script src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
+	<script src="bower_components/foundation/js/foundation/foundation.abide.js"></script>
+	<script src="bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
+	<script src="bower_components/modernizr/modernizr.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/slick.js"></script>
+</body>
+</html>

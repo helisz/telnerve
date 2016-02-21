@@ -1,0 +1,36 @@
+footer{
+	background: $secondary-color;
+	padding: rem-calc(20) 0 0 0;
+	color: rgba(255,255,255,0.4);
+	.title{
+		text-transform: uppercase;
+		font-size: rem-calc(16);
+		font-weight: 700;
+		margin-top: rem-calc(30);
+	}
+	ul{
+		list-style: none;
+		margin: 0;
+		li{
+			a{
+				color: rgba(255,255,255,0.3);
+				font-size: rem-calc(14);
+			}
+		}
+	}
+	.dark{
+		background: $secondary-color-dark;
+		margin-top: rem-calc(30);
+		padding: rem-calc(30) 0 rem-calc(30) 0;
+		color: rgba(255,255,255,0.2);
+	}
+	.icon-logo{
+		display: block;
+		font-size: rem-calc(80);
+		margin-top: rem-calc(-50);
+		height: 0;
+	}
+	.text-right{
+		font-size: rem-calc(12);
+	}
+}
